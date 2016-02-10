@@ -23,9 +23,9 @@ TabManager.prototype = {
 
     if (sort) {
       retGroups.sort((a, b) => {
-        if (a.group.title < b.group.title) {
+        if (a.title < b.title) {
           return -1;
-        } else if (a.group.title > b.group.title) {
+        } else if (a.title > b.title) {
           return 1;
         } else {
           return 0;
