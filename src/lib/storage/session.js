@@ -172,7 +172,8 @@ SessionStorage.prototype = {
     let groupID = this.getNextGroupID(chromeWindow);
     groups[groupID] = {
       id: groupID,
-      title: title
+      title: title,
+      bounds: groups[3].bounds
     };
 
     let currentGroups = this._getCurrentGroupData(chromeWindow);
